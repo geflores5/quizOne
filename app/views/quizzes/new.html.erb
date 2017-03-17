@@ -1,0 +1,10 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Complete Quiz Details</h1>
+  <%= simple_form_for @quiz do |f| %>
+    <%= f.input :number %>
+    <%= f.input :subject %>
+    <%= f.input :directions %>
+    <br />
+    <%= f.submit link_to 'Create', quiz_show_path, class: 'btn btn-primary' %>
+  <% end %>
+</div>
