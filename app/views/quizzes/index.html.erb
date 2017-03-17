@@ -1,3 +1,5 @@
 <% @quizzes.each do |q| %>
-  <h1><%= link_to "Quiz ##{@q.number}: #{@q.subject}", quiz_path(quiz) %></h1>
+  <h1><%= link_to "Quiz ##{q.number}: #{q.subject}", quiz_path(q) %></h1>
 <% end %>
+
+<h3><%= link_to "Create New Quiz", new_quiz_path %> </h3>

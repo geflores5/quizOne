@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>QuizOne</title>
+    <title>quiztwo</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <h1 class="headline">Non-black color headline</h1>
+      <h1 class="headline"> <%= link_to "Quiz List", root_path %></h1>
     </header>
     <%= yield %>
   </body>
